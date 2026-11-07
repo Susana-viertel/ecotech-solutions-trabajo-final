@@ -1,0 +1,16 @@
+[
+    {
+        "tipo": "DispositivoEcológico",
+        "nombre": "Lampara LED Ecologica",
+        "precio": 15000,
+        "stock": 20
+    },
+    {
+        "tipo": "PanelSolar",
+        "nombre": "Panel Solar EcoTech",
+        "precio": 250000,
+        "stock": 10,
+        "potencia": 450,
+        "eficiencia": 22.5
+    }
+]

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Sustentabilidad</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'sustentabilidad/estilos.css' %}">
+</head>
+
+<body>
+
+    <h1>Panel de Sustentabilidad</h1>
+
+    <h2>Métricas de consumo energético</h2>
+
+    <p>
+        Total de emisiones de carbono:
+        {{ total_emisiones }}
+    </p>
+
+    <p>
+        Planta con mayor consumo:
+        {{ planta_mayor_consumo }}
+    </p>
+
+    <h2>EcoTech Solutions</h2>
+
+    <p>Trabajamos por un futuro más sostenible.</p>
+
+</body>
+</html>

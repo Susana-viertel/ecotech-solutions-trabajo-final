@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoTech Solutions</title>
+
+ {% load static %}
+<link rel="stylesheet" href="{% static 'sustentabilidad/estilos.css' %}">
+</head>
+<body>
+
+ <h1>Bienvenidos a EcoTech Solutions</h1>
+
+    <h2>Tecnología para un futuro sostenible</h2>
+
+    <p>
+        Somos una empresa dedicada a ofrecer productos
+        tecnológicos ecológicos que ayudan a cuidar el medio ambiente.
+    </p>
+
+    <h2>Métricas de consumo energético</h2>
+
+    {% if total_emisiones %}
+        <p>Total de emisiones de carbono: {{ total_emisiones }}</p>
+        <p>Planta con mayor consumo: {{ planta_mayor_consumo }}</p>
+    {% else %}
+        <p>Visita la sección de métricas para consultar los resultados.</p>
+    {% endif %}
+
+</body>
+</html>
