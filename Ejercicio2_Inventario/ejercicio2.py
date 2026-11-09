@@ -2,6 +2,7 @@
 
 # Excepcion personalizada para controlar el stock
 import json
+from pathlib import Path
 class StockInvalidoError(Exception):
     """Error que se produce cuando el stock es negativo."""
     pass
@@ -120,7 +121,7 @@ productos = [producto1, producto2]
 # Exportar el catalogo a JSON
 GestorInventario.guardar_catalogo_json(
     productos,
-   "../Ejercicio2_Inventario/catalogo_ecotech.json"
+  Path(__file__).resolve().parent / "catalogo_ecotech.json"
 )
 
 print("\n--- PROCESO FINALIZADO ---")
